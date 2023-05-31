@@ -10,3 +10,7 @@ function interate(max, action){
         action(i);
     }
 }
+
+function log(num){
+    console.log(num);
+}
