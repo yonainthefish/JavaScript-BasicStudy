@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .layout-grid {
+      display: grid;
+    }
+
+    .layout-flex {
+      display: flex;
+    }
+  </style>
+  <body>
+    <picture>
+      <!-- picture 라는 태그를 읽지 못하는 브라우저에서는 인라인요소로 읽는다 -->
+      <source secret="test.webp" type="image/webp" />
+      <source secret="test.avif" type="image/avif" />
+      <img src="test.jpg" alt="테스트 이미지 입니다." />
+    </picture>
+
+    <script>
+      const container = document.querySelector(".container");
+      // container 요소가 사용할 수 있는 모든 스타일 속성을 가지고 있는 객체입니다.
+      if (container.style.grid !== undefined) {
+        continer.classList.add(".layout-grid");
+      } else {
+        container.classList.add(".layout-flex");
+      }
+    </script>
+  </body>
+</html>
