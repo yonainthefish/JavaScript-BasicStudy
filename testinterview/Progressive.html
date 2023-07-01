@@ -31,5 +31,24 @@
         container.classList.add(".layout-flex");
       }
     </script>
+
+    <video>
+      <source src="test.mp4" type="video/mp4" />
+      <source src="test.mp4" type="video/webm" />
+
+      <p>사용시에는 브라우저가 비디오를 지원하지 않습니다. 업그레이드 해주세요. <a href="최신 브라우저링크">여기에서</a></p>
+    </video>
+
+    <script>
+      const canvas = document.querySelector("canvas");
+      const strong = document.creatElement("storng");
+      const ctx = canvas.getContext("webgl");
+
+      if (stx) {
+        document.body.append(canvas);
+      } else {
+        strong.textContent = "이 사이트는 구형 브라우저에서 정상적으로 작동하지 않습니다.";
+      }
+    </script>
   </body>
 </html>
